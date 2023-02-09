@@ -17,8 +17,8 @@ public class EploweCubs : MonoBehaviour
             }
             restartButton.SetActive(true);
 
-             
-           // Camera.main.transform.position -= new Vector3(0,0,3f);
+            
+            Camera.main.transform.position -= new Vector3(0,0,0f);
             Camera.main.gameObject.AddComponent<CameraShake>();
 
 

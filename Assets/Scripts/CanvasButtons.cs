@@ -29,6 +29,19 @@ public class CanvasButtons : MonoBehaviour
         Application.OpenURL("https://vk.ru/wingofnight");
     }
 
+    public void LoadShop(){
+        if(PlayerPrefs.GetString("music") != "No")
+            GetComponent<AudioSource>().Play();
+
+        SceneManager.LoadScene("SHop");
+    }
+
+     public void CloseShop(){
+        if(PlayerPrefs.GetString("music") != "No")
+            GetComponent<AudioSource>().Play();
+
+        SceneManager.LoadScene("scen1");
+    }
     public void MusicWork(){
         if(PlayerPrefs.GetString("music") == "No"){
              GetComponent<AudioSource>().Play();
